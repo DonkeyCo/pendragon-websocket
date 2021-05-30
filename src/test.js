@@ -8,12 +8,8 @@ socket.on("connect", () => {
 
 socket.emit("helloWorld")
 
-socket.on("helloWorlded", (s) => {
-  console.log(s);
+socket.on("sessionUpdated", (s, t) => {
+  console.log("WOW");
 })
 
-socket.emit("createLobby", {playerId: "ID", player: {}})
-
-socket.on("createdLobby", (s) => {
-  console.log(s);
-})
+socket.emit("joinLobby", "289c760a-6f3b-4da8-9f1a-5a6de6b4bd96", {"id": 1000})
