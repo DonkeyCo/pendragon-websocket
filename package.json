@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "socket.io-client": "^4.1.2"
+  },
+  "scripts": {
+    "start": "node -r esm src/index.js"
   }
 }
